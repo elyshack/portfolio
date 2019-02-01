@@ -7,16 +7,25 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p>This is the code portfolio of <code>Elyse Shackleton</code>.</p>
-          <p>Follow @ <code><a 
+          <p>This is the code portfolio of Elyse Shackleton</p>
+          <p>Follow @ <a 
             className="App-link"
             href="https://twitter.com/elyseshackleton"
             target="_blank"
             rel="noopener noreferrer"
           >
           Twitter
+          </a> 
+          </p>
+          <p>
+            @ <a 
+            className="App-link"
+            href="https://instagram.com/elyshack"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          Instagram
           </a>
-          </code>
           </p>
           <img src={logo} className="App-logo" alt="logo" />
           <p>
