@@ -1,6 +1,5 @@
 import React, { Component} from 'react';
 import inner_pi from './components/images/inner_pi.png';
-import hawaii from './components/images/hawaii.png';
 import './App.css';
 
 class App extends React.Component {
@@ -47,7 +46,6 @@ class App extends React.Component {
           >
             Test Page Link
           </a>
-          <img src={hawaii} className="Pics"/>
         </header>
       </div>
     );
