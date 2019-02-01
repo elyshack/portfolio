@@ -12,3 +12,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+highlight {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+    padding: 0;
+    border-width: 5;
+    border-color: "#ffffff";
+    background-color: "#000000"
+}

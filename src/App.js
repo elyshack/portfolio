@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p>This is the code portfolio of <code>Elyse Shackleton</code></p>
+          <h3>This is the code portfolio of Elyse Shackleton</h3>
           <p>Follow @ <a 
             className="App-link"
             href="https://twitter.com/elyseshackleton"
@@ -29,9 +29,9 @@ class App extends Component {
           Instagram
           </a>
           </p>
-          <img src={inner_pi} className="App-logo" alt="logo" />
+          <img src={inner_pi} className="App-logo" alt="logo"/>
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            <highlight>Fight me irl</highlight>
           </p>
           <a
             className="App-link"
@@ -39,7 +39,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Html test page
+            Test Page Link
           </a>
         </header>
       </div>
