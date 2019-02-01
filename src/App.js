@@ -11,6 +11,8 @@ class App extends Component {
           <p>Follow @ <code><a 
             className="App-link"
             href="https://twitter.com/elyseshackleton"
+            target="_blank"
+            rel="noopener noreferrer"
           >
           Twitter
           </a>
