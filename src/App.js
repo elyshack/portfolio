@@ -16,11 +16,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-          Twitter
-          </a> 
-          </p>
-          <p>
-            @ <a 
+          Twitter</a>,  <a 
             className="App-link"
             href="https://instagram.com/elyshack"
             target="_blank"
