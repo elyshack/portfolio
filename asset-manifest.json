@@ -1,16 +1,16 @@
 {
-  "main.css": "/reacttest/static/css/main.c88cef8c.chunk.css",
-  "main.js": "/reacttest/static/js/main.df8ec176.chunk.js",
-  "main.js.map": "/reacttest/static/js/main.df8ec176.chunk.js.map",
+  "main.css": "/reacttest/static/css/main.057b942a.chunk.css",
+  "main.js": "/reacttest/static/js/main.99897a7b.chunk.js",
+  "main.js.map": "/reacttest/static/js/main.99897a7b.chunk.js.map",
   "static/js/1.fa92c112.chunk.js": "/reacttest/static/js/1.fa92c112.chunk.js",
   "static/js/1.fa92c112.chunk.js.map": "/reacttest/static/js/1.fa92c112.chunk.js.map",
   "runtime~main.js": "/reacttest/static/js/runtime~main.74521833.js",
   "runtime~main.js.map": "/reacttest/static/js/runtime~main.74521833.js.map",
-  "static/css/main.c88cef8c.chunk.css.map": "/reacttest/static/css/main.c88cef8c.chunk.css.map",
+  "static/css/main.057b942a.chunk.css.map": "/reacttest/static/css/main.057b942a.chunk.css.map",
   "static/media/inner_pi.png": "/reacttest/static/media/inner_pi.203cc622.png",
   "static/media/blankclock.png": "/reacttest/static/media/blankclock.4efb4c8d.png",
   "static/media/logo.svg": "/reacttest/static/media/logo.5d5d9eef.svg",
   "index.html": "/reacttest/index.html",
-  "precache-manifest.91771018da1ba6ec25f49e28ecaefc33.js": "/reacttest/precache-manifest.91771018da1ba6ec25f49e28ecaefc33.js",
+  "precache-manifest.ddd4be908a1dd83349a5f2c8239af758.js": "/reacttest/precache-manifest.ddd4be908a1dd83349a5f2c8239af758.js",
   "service-worker.js": "/reacttest/service-worker.js"
 }
