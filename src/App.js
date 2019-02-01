@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p>This is the code portfolio of Elyse Shackleton</p>
+          <p>This is the code portfolio of <code>Elyse Shackleton</code></p>
           <p>Follow @ <a 
             className="App-link"
             href="https://twitter.com/elyseshackleton"
