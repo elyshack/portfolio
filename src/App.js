@@ -1,8 +1,5 @@
 import React, { Component} from 'react';
 import inner_pi from './components/images/inner_pi.png';
-import { Button } from 'react-bootstrap/Button';
-import { ButtonToolbar } from 'react-bootstrap/ButtonToolbar';
-import { Container } from 'react-bootstrap/Container';
 import './App.css';
 
 class App extends React.Component {
