@@ -1,16 +1,18 @@
 import React, { Component} from 'react';
 import inner_pi from './components/images/inner_pi.png';
 import './App.css';
+import Heading from './components/Heading.js';
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <h3 className="Title"><code>
+          {/* <h3 className="Title"><code>
             Elyse Shackleton Code Portfolio
             </code></h3>
-          <hr width="75%"/>
+          <hr width="75%"/> */}
+          <Heading />
           <p>Follow @ <a 
             className="App-link"
             href="https://twitter.com/elyseshackleton"

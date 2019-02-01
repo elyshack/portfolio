@@ -9,10 +9,23 @@
   
 }
 
+.Line-break {
+  width: 75vw;
+  color: white;
+}
+
+.Button-bar {
+align-items: center;
+}
+.Button {
+  padding: 15px;
+}
+
 .App-header {
-  padding: 2vh;
+  padding: 1vh;
   background-color: #282c34;
   min-height: 100vh;
+  min-width: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +39,7 @@
 
 .Title {
   max-width: 98vw;
-  
+  color: white;
 }
 
 .Pics {
