@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import inner_pi from './components/inner_pi.png';
+import blankclock from './components/blankclock.png';
 import './App.css';
 
 class App extends Component {
@@ -27,7 +29,7 @@ class App extends Component {
           Instagram
           </a>
           </p>
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={inner_pi} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
