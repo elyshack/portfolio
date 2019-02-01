@@ -27,7 +27,8 @@ class App extends React.Component {
           </a>
           </p>
           <div>
-          <img src={inner_pi} className="App-logo" alt="logo"/>
+          <img flex="1"
+          src={inner_pi} className="App-logo" alt="logo"/>
           </div>
           <p>
             <highlight>Fight me irl</highlight>

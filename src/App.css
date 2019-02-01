@@ -4,7 +4,9 @@
 
 .App-logo {
   animation: App-logo-dash infinite 0.5s ease-in-out;
-  height: 40vmin;
+  height: 20vmin;
+  padding: 5vh;
+  
 }
 
 .App-header {
