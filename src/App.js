@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import View from 'react';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
+          <p>This is the code portfolio of <code>Elyse Shackleton</code>.</p>
+          <p>Follow @ <code><a 
+            className="App-link"
+            href="https://twitter.com/elyseshackleton"
+          >
+          Twitter
+          </a>
+          </code>
+          </p>
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
@@ -18,14 +26,13 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Html page
+            Html test page
           </a>
         </header>
       </div>
     );
   }
 }
-
 
 
 
