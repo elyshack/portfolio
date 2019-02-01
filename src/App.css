@@ -24,7 +24,14 @@
 
 .Title {
   max-width: 98vw;
+  
+}
 
+.Pics {
+  padding: 30px;
+  border-radius: 10px;
+  border-color: #748ab3;
+  max-height: 50vh;
 }
 
 @keyframes App-logo-spin {
