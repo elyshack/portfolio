@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import View from 'react';
 
 class App extends Component {
   render() {
@@ -13,7 +14,7 @@ class App extends Component {
           </p>
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://elyshack.github.io/testpage"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -24,5 +25,8 @@ class App extends Component {
     );
   }
 }
+
+
+
 
 export default App;
