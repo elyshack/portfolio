@@ -7,7 +7,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h3><code>
+          <h3 className="Title"><code>
             Elyse Shackleton Code Portfolio
             </code></h3>
           <hr width="75%"/>

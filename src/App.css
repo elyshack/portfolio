@@ -21,10 +21,8 @@
   color: #61dafb;
 }
 
-.Horizontal-container {
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.Title {
+  max-width: 95vw;
 
 }
 
