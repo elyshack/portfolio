@@ -2,6 +2,7 @@ import React, { Component} from 'react';
 import inner_pi from './components/images/inner_pi.png';
 import './App.css';
 import Heading from './components/Heading.js';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class App extends React.Component {
   render() {
