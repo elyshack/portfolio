@@ -26,13 +26,13 @@ class App extends React.Component {
           <h3 className="Title">Elyse Shackleton Code Portfolio </h3>
           <div className="Button-bar">
               <Button href="https://elyshack.github.io/portfolio" variant="outline-primary">
-                <Link className="link" to="/"> Home </Link>
+                <Link className="link" to="/portfolio/"> Home </Link>
                 </Button>
                   <DropdownButton variant="outline-primary" as={ButtonGroup} title="Projects" id="bg-nested-dropdown">
                       <Dropdown.Item eventKey="1" href="https://elyshack.github.io/testpage"
                           target="_blank"
                           rel="noopener noreferrer">Html test page</Dropdown.Item>
-                         <Dropdown.Item eventKey="2"> <Link className="sublink" to="/recipe">Recipe Scaler</Link> </Dropdown.Item>
+                         <Dropdown.Item eventKey="2"> <Link className="sublink" to="/portfolio/recipe">Recipe Scaler</Link> </Dropdown.Item>
                          <Dropdown.Item eventKey="3">Album</Dropdown.Item>
                   </DropdownButton>
 
@@ -45,8 +45,8 @@ class App extends React.Component {
           </div>
           </div>
 
-          <Route exact path="/" component={Home} />
-          <Route path="/recipe" component={RecipeScaler} />
+          <Route exact path="/portfolio/" component={Home} />
+          <Route path="/portfolio/recipe" component={RecipeScaler} />
 
         </Router>
 
