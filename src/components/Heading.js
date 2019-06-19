@@ -4,7 +4,8 @@ import Button from 'react-bootstrap/Button';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
-import ButtonGroup from 'react-bootstrap/ButtonGroup'
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import agent_file from '../media/Elyse_Shackleton_Resume_June_2018.pdf';
 
 class Heading extends React.Component {
     render() {
@@ -17,11 +18,12 @@ class Heading extends React.Component {
             <Button href="https://elyshack.github.io/portfolio" variant="outline-primary">Home  </Button>
                 <DropdownButton variant="outline-primary" as={ButtonGroup} title="Projects" id="bg-nested-dropdown">
                     <Dropdown.Item eventKey="1" href="https://elyshack.github.io/testpage"
-            target="_blank"
-            rel="noopener noreferrer">Html test page</Dropdown.Item>
+                        target="_blank"
+                        rel="noopener noreferrer">Html test page</Dropdown.Item>
                     <Dropdown.Item eventKey="2">Album</Dropdown.Item>
                 </DropdownButton>
-            <Button href="/media/Elyse_Shackleton_Resume_June_2018.pdf" variant="outline-primary" download>Resume </Button>
+
+            <Button href={agent_file} variant="outline-primary" download="Elyse_Shackleton_Resume_June_2018.pdf">Resume</Button>
         </div>        
         </code>
         </view>
