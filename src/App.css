@@ -27,6 +27,8 @@
 .Line-break {
   width: 75vw;
   color: white;
+  background-color: white;
+  border-color: white;
 }
 
 .Button-bar {
