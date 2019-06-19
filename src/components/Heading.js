@@ -21,6 +21,7 @@ class Heading extends React.Component {
             rel="noopener noreferrer">Html test page</Dropdown.Item>
                     <Dropdown.Item eventKey="2">Album</Dropdown.Item>
                 </DropdownButton>
+            <Button href="/media/Elyse_Shackleton_Resume_June_2018.pdf" variant="outline-primary" download>Resume </Button>
         </div>        
         </code>
         </view>
