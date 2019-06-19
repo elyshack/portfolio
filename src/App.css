@@ -1,3 +1,7 @@
+.recipewrapper{
+  min-height: 75vh;
+  min-width: 75vw;
+}
 
 .link {
   color: #007bff;
@@ -29,6 +33,12 @@
   color: white;
   background-color: white;
   border-color: white;
+}
+
+.Sub-line-break {
+  color: grey;
+  background-color: grey;
+  border-color: grey;
 }
 
 .Button-bar {

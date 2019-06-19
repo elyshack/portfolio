@@ -11,21 +11,39 @@ import App from '../App.js';
 
 
 class RecipeScaler extends React.Component {
+
+state = {ingredients: [], scalingToggle: false, display: 'WIP', tempDisplay: ''};
+
+
+handleChange = (event) => {
+  this.setState({tempDisplay: event.target.value});
+}
+
+handleClick = () => {
+  this.setState({display: this.state.tempDisplay})
+}
+
   render() {
     return (
-
-
-
-
-      <div className="App">
-          <a
-            className="App-link"
-            href="https://elyshack.github.io/testpage"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Test Page Link
-          </a>
+      <div className="recipewrapper">
+        <label> Recipe Scaler </label>
+        <br/>
+        <label> {this.state.display} </label>
+        <br/>
+        <input type="text" onChange={this.handleChange.bind(this)}></input> <input></input>
+        <br/>
+        <input></input> <input></input>
+        <br/>
+        <input></input> <input></input>
+        <br/>
+        <input></input> <input></input>
+        <br/>
+        <input></input> <input></input>
+        <br/>
+        <input></input> <input></input>
+        <br/>
+        <br/>
+        <Button onClick={this.handleClick}>Finalize!</Button>
       </div>
     );
   }
