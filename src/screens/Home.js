@@ -38,12 +38,15 @@ class Home extends React.Component {
           console.log(err);
       }
 
+      // Build out object of random numbers corresponding with keys, then update
+      var obj = {};
       for (var i=0; i < dataArray.length; i++){
         var randomVal = Math.floor(Math.random() * Math.floor(101));
-        var obj = {};
         obj[keyArray[i]] = randomVal;
-        await  firebase.database().ref('students/').update(obj);
       }
+
+      await firebase.database().ref('students/').update(obj);
+
     }
 
 
