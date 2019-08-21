@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, View } from 'react';
 import '../App.css';
 import Button from 'react-bootstrap/Button';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';

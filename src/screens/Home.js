@@ -2,16 +2,53 @@ import inner_pi from '../components/images/inner_pi.png';
 import React, { Component } from 'react';
 import '../App.css';
 import Button from 'react-bootstrap/Button';
-import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import agent_file from '../media/Elyse_Shackleton_Resume_June_2018.pdf';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import RecipeScaler from '../screens/RecipeScaler.js';
-
+import firebase from '../firebase.js';
 
 class Home extends React.Component {
+
+  state = {number: 0}
+
+  testClick = () => {
+    this.setState({number: Math.floor(Math.random() * Math.floor(101))});
+    console.log("HELLO");
+  }
+
+
+
+    // RANDOM STUDENT VALUE GENERATOR
+    handleClick = async () => {
+      this.setState({number: "yeet"});
+
+      var keyArray = [];
+      var dataArray =[];
+      try{
+        // Create Query
+        var studentsQuery = firebase.database().ref('students').orderByKey();
+        // Call query and loop through all fetched values
+         await studentsQuery.once("value").then(function(snapshot){
+            snapshot.forEach(function(childSnapshot){
+                var key = childSnapshot.key;
+                var childData = childSnapshot.val();
+                keyArray.push(key);
+                dataArray.push(childData);
+            });
+        });
+      } catch(err){
+        this.setState({number: err});
+          console.log(err);
+      }
+
+      for (var i=0; i < dataArray.length; i++){
+        var randomVal = Math.floor(Math.random() * Math.floor(101));
+        var obj = {};
+        obj[keyArray[i]] = randomVal;
+        await  firebase.database().ref('students/').update(obj);
+      }
+    }
+
+
+
+
     render() {
       return (
         <div>
@@ -45,7 +82,12 @@ class Home extends React.Component {
       >
         Test Page Link
       </a>
+      <div/>
+      <Button onClick={this.handleClick}>Randomize!</Button>
+      <div/>
+      <label>{this.state.number}</label>
       </div>
+      
       );
     }
   }

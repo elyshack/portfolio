@@ -10,8 +10,10 @@ import agent_file from './media/Elyse_Shackleton_Resume_June_2018.pdf';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import RecipeScaler from './screens/RecipeScaler.js';
 import Home from './screens/Home.js';
+import firebase from './firebase.js';
 
 class App extends React.Component {
+
   render() {
     return (
       <div className="App">
