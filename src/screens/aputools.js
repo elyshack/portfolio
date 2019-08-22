@@ -83,6 +83,7 @@ class ApuTools extends React.Component {
       <div/>
       <Button onClick={this.handleClick}>Efficient Randomize Database</Button>
       <div/>
+      <div/>
       <Button onClick={this.funClick}>FUN Database Randomize!</Button>
       <div/>
       </div>
