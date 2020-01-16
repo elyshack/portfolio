@@ -3,17 +3,20 @@ import React, { Component } from 'react';
 import '../App.css';
 import Button from 'react-bootstrap/Button';
 import firebase from '../firebase.js';
+import { subscribe, Connector } from 'mqtt-react';
+
+
+const MessageContainer = subscribe({topic: 'APUEDU/ECS/Research/IoT/2019'})();
+
 
 class ApuTools extends React.Component {
 
-  state = {number: 0}
+  state = {number: 0, mqttMessage: 'Test Change'};
 
   testClick = () => {
     this.setState({number: Math.floor(Math.random() * Math.floor(101))});
     console.log(this.state.number);
   }
-
-
 
     // RANDOM STUDENT VALUE GENERATOR
     handleClick = async () => {
@@ -79,15 +82,19 @@ class ApuTools extends React.Component {
 
     render() {
       return (
+      <Connector mqttProps="broker.hivemq.com/">
       <div>
+      <p>APU IoT Research Tools</p>
+      <br/>
       <div/>
-      <Button onClick={this.handleClick}>Efficient Randomize Database</Button>
+      <Button onClick={this.handleClick}>Batch Database Randomizer</Button>
+      <br/>
+      <Button onClick={this.funClick}>Sequential Database Randomizer</Button>
       <div/>
-      <div/>
-      <Button onClick={this.funClick}>FUN Database Randomize!</Button>
-      <div/>
+      <br/>
+      <p>MQTT FEED: {this.state.mqttMessage}</p>
       </div>
-      
+      </Connector>
       );
     }
   }
